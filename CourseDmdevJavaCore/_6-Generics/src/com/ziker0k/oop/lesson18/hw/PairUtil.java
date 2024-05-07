@@ -18,6 +18,6 @@ public final class PairUtil {
     public static <K, V> Pair<V, K> swap(Pair<K, V> source) {
         K value1 = source.getValue1();
         V value2 = source.getValue2();
-        return new Pair<V, K>(value2, value1);
+        return new Pair<>(value2, value1);
     }
 }
