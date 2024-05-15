@@ -17,7 +17,7 @@ public class Night extends Thread {
                             """, i + 1
                     );
                     lock.notifyAll();
-                    lock.wait(NightConst.NIGHT_INTERVAL);
+                    lock.wait(NightConst.NIGHT_INTERVAL * 100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
